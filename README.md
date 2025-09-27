@@ -28,4 +28,4 @@ Contact: A form or links to reach me through email or social media.
 
 🌍 Live Demo
 
-View the live site here : 
+View the live site here : https://snehgohil-portfolio.netlify.app/
