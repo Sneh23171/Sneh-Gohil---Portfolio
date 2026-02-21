@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Professional B&amp;W Tech Portfolio | Software Engineer</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><text x=%2250%22 y=%2275%22 font-family=%22Arial, sans-serif%22 font-size=%2280%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>S</text></svg>" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet" />
@@ -36,6 +38,9 @@
         }
     </script>
     <style type="text/tailwindcss">
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Space Grotesk', sans-serif;
         }
@@ -225,7 +230,7 @@
                     class="relative aspect-video overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
                     <img alt="Project Screenshot"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="MarketStore.jpg" />
+                        src="Img/MarketStore.jpg" />
                     <div class="absolute top-4 left-4">
                         <span
                             class="bg-white text-black text-[10px] font-black px-2 py-1 rounded uppercase tracking-tighter">Featured</span>
@@ -290,34 +295,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="group bg-neutral-950 rounded-xl border border-white/10 overflow-hidden hover:border-white/30 transition-all duration-300 flex flex-col">
-                <div
-                    class="relative aspect-video overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
-                    <img alt="Project Screenshot"
-                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhRR-Cm4c3MyQtRxfV_H-HhRzp8RFVk3ImSodi9LnzLaVnBpheEdTpomz1thl42wYeAIINvLaZxfDq5NSkEpI7nWRkhEOGbv8bbKnMnbJrok9MPXu8jqG-4Psb1ghtcdNPLqB04Z7khcGoOxoZGd9f3pqMvSHUyWFQd5hPpi2PM-F_05KtJDUvguIXKOc3WpnvB3STD6HN04k3WilWqG7Q-eYUtPoOnkMXJnczbVN_-GCstw5245qFF3uCPx4qi5Hb9zxtE05kHtC2" />
-                </div>
-                <div class="p-6 flex-1 flex flex-col">
-                    <h3 class="text-xl font-bold mb-2 group-hover:text-white transition-colors">D-Commerce Gateway</h3>
-                    <p class="text-sm text-neutral-500 mb-6 flex-1">Decentralized payment gateway supporting smart
-                        contract-based escrow.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span
-                            class="px-2 py-1 bg-white/5 border border-white/10 text-[10px] font-bold rounded uppercase">Solidity</span>
-                        <span
-                            class="px-2 py-1 bg-white/5 border border-white/10 text-[10px] font-bold rounded uppercase">Next.js</span>
-                    </div>
-                    <div class="flex items-center justify-between border-t border-white/10 pt-4">
-                        <a class="flex items-center gap-1 text-sm font-bold hover:text-white" href="#">
-                            <span class="material-symbols-outlined text-base">link</span> Live Demo
-                        </a>
-                        <a class="p-2 hover:bg-white/10 rounded-full transition-colors" href="#">
-                            <span class="material-symbols-outlined">code</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
     <section class="py-24 bg-black" id="skills">
@@ -472,6 +450,20 @@
                     <div>
                         <h4 class="font-bold text-sm">jQuery</h4>
                         <p class="text-xs text-neutral-500">Scripting</p>
+                    </div>
+                </div>
+
+                <div class="bw-grid-item p-4 rounded-xl flex items-center gap-4 group transition-all">
+                    <div
+                        class="p-3 bg-neutral-900 rounded-lg group-hover:bg-white group-hover:text-black transition-colors">
+                        <svg role="img" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path
+                                d="M8 24c-2.201 0-4-1.799-4-4s1.799-4 4-4a4.015 4.015 0 0 1 3.515 2.08L12 16c0 4.418-3.582 8-8 8zm0-16C5.799 8 4 6.201 4 4s1.799-4 4-4c2.201 0 4 1.799 4 4 0 2.201-1.799 4-4 4zm8 16c-2.201 0-4-1.799-4-4 0-2.201 1.799-4 4-4s4 1.799 4 4c0 2.201-1.799 4-4 4zm0-16c-2.201 0-4-1.799-4-4s1.799-4 4-4a4.015 4.015 0 0 1 3.515 2.08L20 4c0 4.418-3.582 8-8 8zM8 16c-2.201 0-4-1.799-4-4 0-2.201 1.799-4 4-4s4 1.799 4 4c0 2.201-1.799 4-4 4z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Figma</h4>
+                        <p class="text-xs text-neutral-500">Design</p>
                     </div>
                 </div>
 
