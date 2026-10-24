@@ -7,7 +7,7 @@ export const personalInfo = {
   mapUrl: "https://maps.google.com/?q=Nehru+Nagar,+Ahmedabad,+Gujarat",
   email: "snehgohil77@gmail.com",
   phone: "+91 9265182032",
-  resumeUrl: "https://drive.google.com/file/d/1WAnixcxm3WEVhFXfxXnLT3qHwkGBT2Fn/view",
+  resumeUrl: "https://drive.google.com/file/d/1RtT-4cBQOhEHyZP0LcpbjQcOmi399PRf/view?usp=sharing",
   socials: {
     whatsapp: "https://wa.me/919265182032",
     github: "https://github.com/Sneh177",

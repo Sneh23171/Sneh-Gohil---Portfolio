@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useReducedMotion, animate, useInView } from 'framer-motion';
 import { personalInfo } from '../data/portfolioData';
+import ResumeModal from './ResumeModal';
 import {
   Download,
   ArrowUpRight,
@@ -245,6 +246,7 @@ export default function Hero() {
   const [imgSrc, setImgSrc]           = useState(personalInfo.avatar);
   const [titleIndex, setTitleIndex]   = useState(0);
   const [activityState, setActivity]  = useState(null);
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
   const shouldReduceMotion            = useReducedMotion();
 
   // Compute IST time client-side (UTC+5:30) to avoid hydration mismatch
@@ -390,17 +392,16 @@ export default function Hero() {
               <ArrowUpRight className="w-4 h-4 text-slate-500 dark:text-neutral-400" />
             </motion.a>
 
-            <motion.a
+            <motion.button
+              type="button"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
-              href={personalInfo.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 py-3.5 bg-transparent hover:bg-slate-100 text-slate-700 border border-slate-200/90 shadow-sm dark:bg-transparent dark:hover:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 font-bold text-sm rounded-lg transition-colors flex items-center gap-2"
+              onClick={() => setIsResumeModalOpen(true)}
+              className="px-7 py-3.5 bg-transparent hover:bg-slate-100 text-slate-700 border border-slate-200/90 shadow-sm dark:bg-transparent dark:hover:bg-neutral-800 dark:text-neutral-300 dark:border-neutral-700 font-bold text-sm rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
             >
               <Download className="w-4 h-4 stroke-[2.5]" />
               <span>Download CV</span>
-            </motion.a>
+            </motion.button>
           </motion.div>
 
           {/* Quick Metrics */}
@@ -449,6 +450,12 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {/* Modern Interactive Resume Preview & Download Modal */}
+      <ResumeModal
+        isOpen={isResumeModalOpen}
+        onClose={() => setIsResumeModalOpen(false)}
+      />
     </section>
   );
 }
